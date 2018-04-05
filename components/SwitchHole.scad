@@ -1,4 +1,4 @@
-function switch_size(size=1,x=14,z=1.5) = ([x,x*size,z]);
+use <funcs.scad>
 
 module SwitchHole(size=1,pos_x=0,pos_y=0,ortho=false,gap=5) {
     sx = switch_size(size)[0]; 

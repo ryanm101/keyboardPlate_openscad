@@ -1,10 +1,6 @@
 use <components\SwitchHole.scad>
 use <components\MountHoles.scad>
-
-function calc_hole_count(frame=81, frameEdge=5, switch=14, switchGap=5) = 
-    ( (frame - (2*frameEdge) + switchGap) / (switch + switchGap));
-
-function calc_hole_offset(pos=0, gap=5, switch=14, count=1) = ( pos + (switch + gap) * count );
+use <components\funcs.scad>
 
 module OrthoKeypad(frame_x=119,frame_y=81,frame_z=1.5) {
     // Gap around frame
